@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-5deg); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes float-4 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(-3deg); }
+}
+
+@keyframes float-5 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(6deg); }
+}
+
+@keyframes envelope-open {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1) rotateY(180deg); }
+  100% { transform: scale(1) rotateY(0deg); }
+}
+
+@keyframes confetti-explosion {
+  0% { transform: scale(0.8); }
+  40% { transform: scale(1.1); }
+  60% { transform: scale(0.9); }
+  80% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes unwrap-gift {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.1) rotate(5deg); }
+  50% { transform: scale(0.9) rotate(-5deg); }
+  75% { transform: scale(1.05) rotate(3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-pop-in {
+  animation: popIn 0.5s ease-out;
+}
+
+.animate-float-1 {
+  animation: float-1 3s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-2 2.5s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-3 3.5s ease-in-out infinite;
+}
+
+.animate-float-4 {
+  animation: float-4 4s ease-in-out infinite;
+}
+
+.animate-float-5 {
+  animation: float-5 3.2s ease-in-out infinite;
+}
+
+.animate-envelope-open {
+  animation: envelope-open 1.5s ease-in-out;
+}
+
+.animate-confetti-explosion {
+  animation: confetti-explosion 1s ease-in-out;
+}
+
+.animate-unwrap-gift {
+  animation: unwrap-gift 1.5s ease-in-out;
+}
+
+.transform-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.hover\:rotate-y-12:hover {
+  transform: rotateY(12deg);
+}

@@ -1,0 +1,10 @@
+export { default as FriendshipQuiz } from './FriendshipQuiz';
+export { default as FlappyBird } from './FlappyBird';
+export { default as MazeOfGifts } from './MazeOfGifts';
+export { default as CardMatching } from './CardMatching';
+export { default as DigitalScratchoff } from './DigitalScratchoff';
+export { default as TreasureHunt } from './TreasureHunt';
+export { default as WordScramble } from './WordScramble';
+export { default as PuzzleAssembly } from './PuzzleAssembly';
+export { default as BalloonPopChallenge } from './BalloonPopChallenge';
+export { default as ReactionTimeChallenge } from './ReactionTimeChallenge';
